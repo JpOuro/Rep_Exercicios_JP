@@ -1,4 +1,4 @@
-    function max() {
+    function min() {
     let n = prompt("Insira o tamanho do array.");
     let arr = [];
     n++;
@@ -7,14 +7,14 @@
         arr.push(a);
     }
     for (let i = 0; i < n; i++) {
-        let max = arr[i];
+        let min = arr[i];
         let ind;
         for (let j = i; j < n; j++) {
-            if (max < arr[j]) {
-                max = arr[j];
+            if (min > arr[j]) {
+                min = arr[j];
             }
         }
-        return max;
+        return min;
     }
 }
-console.log(max());
+console.log(min());
