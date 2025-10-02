@@ -1,2 +1,3 @@
-let nÃºmeroMÃ¡ximo: number = Number.MAX_VALUE;
-console.log(`O nÃºmero mÃ¡ximo aceito pelo JavaScript Ã© ${nÃºmeroMÃ¡ximo}.`);
+let númeroMáximo: number = Number.MAX_VALUE;
+console.log(`O número máximo aceito pelo JavaScript é ${númeroMáximo}.`);
+export {}
