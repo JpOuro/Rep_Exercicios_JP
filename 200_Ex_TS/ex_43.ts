@@ -7,9 +7,9 @@ let i: number = str.length - 1;
     i--;
 }
 if (str == resultado) {
-    console.log("  pal ndromo.");
+    console.log("O número é palíndromo.");
 }
 else {
-    console.log("N o   pal ndromo.")
+    console.log("Número não é palíndromo.")
 }
 export{};
