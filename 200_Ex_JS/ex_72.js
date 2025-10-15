@@ -12,8 +12,8 @@ const arr = [
 function Weird(n, arr, m) {
     let n_arr = [];
     for (let i = 0; i < n_arr.length; i++) {
-        for (let j = 0; j < m; j++) {
-            n_arr.push(arr[i](n));
+        for (let j = 0; j < n; j++) {
+            n_arr.push(arr[i](m));
         }
     }
     return n_arr;
