@@ -11,7 +11,7 @@ const arr = [
 
 function Weird(n, arr, m) {
     let n_arr = [];
-    for (let i = 0; i < n_arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < n; j++) {
             n_arr.push(setTimeout(arr[i](m), n));
         }
