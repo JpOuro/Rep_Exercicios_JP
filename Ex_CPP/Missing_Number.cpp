@@ -1,27 +1,15 @@
-/* https://cses.fi/problemset/task/1083 */
+/* https://leetcode.com/problems/missing-number/submissions/1818161789/ */
 
-#include <bits/stdc++.h>
-#include <string>
-using namespace std;
-int main () {
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-    long int n, num;
-    cin >> n;
-    long int matriz[n];
-    for (int i = 0; i < n; i++) {
-        matriz[i] = 0;
-    }
-    long int N = n - 1;
-    while (N--) {
-        cin >> num;
-        matriz[num - 1] = num;
-    }
-    for (int i = 0; i < n; i++) {
-        if (matriz[i] == 0) {
-            cout << i + 1;
-            break;
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        int n = nums.size();
+        for (int i = 0; i < n; i++) {
+            if (nums[i] != i) {
+                return i;
+            }
         }
+        return n;
     }
-return 0;
-}
+};
